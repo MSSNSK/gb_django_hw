@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block about %} {{ about }} {% endblock %}
+
+{% block content %}
+    <h1 style="text-align: center">Страница обо мне.</h1>
+    <p style="text-align: center">Многострочный текст с HTML вёрсткой и данными обо мне...</p>
+    <p><a href="{% url 'index' %}">Вернуться на главную страницу...</a></p>
+{% endblock %}
